@@ -53,3 +53,16 @@ for Java 7.
 Our usual process is to test, update the versions, then test again before committing back.
 
 [plugin]: http://www.mojohaus.org/versions-maven-plugin/
+#********************************************************************************************#
+
+##Create project by:
+mvn archetype:generate -Dappengine-version=1.9.59 -Dapplication-id=tryit-256718 -Dfilter=com.google.appengine.archetypes:
+
+    groupId : com.wecashup.tryIt
+    artifactId : tryIt
+    version : (default value)
+    package : (default value)
+    
+cd tryIt
+
+mvn clean package
